@@ -7,14 +7,15 @@ import PopularedCourses from '../Pages/PopularedCourses';
 
 const CourseCard = () => {
   return (
-    <div>
+    <div className='p-20'>
     <PopularedCourses />
-    <div className='flex items-center justify-center gap-10 p-10'>
+    <div className='flex items-center justify-center gap-10 p-20'>
     <div className="bg-white rounded-3xl shadow-lg p-4 w-64">
       <img
         src={data}
         className="rounded-xl w-full h-36 object-contain"
       />
+
       <div className="flex justify-between items-start mt-3">
         <h3 className="text-md font-semibold text-gray-800">Data Science Essentials</h3>
         <FaHeart className="mt-1 cursor-pointer text-red-700" />
@@ -39,7 +40,9 @@ const CourseCard = () => {
             <h3 className='text-md font-semibold text-gray-800'>Effecvtive Leadership Skills</h3>
             <FaHeart className='mt-1 cursor-pointer text-red-700'/>
         </div>
-        <div className='flex items-center gap-1'>
+
+        <div className='flex justify-between pt-3'>
+                  <div className='flex items-center gap-1'>
             <FaRegClock />
             <span className='font-semibold text-purple-500'>2hr 30min</span>
         </div>
@@ -49,6 +52,7 @@ const CourseCard = () => {
             <span className='font-semibold'>4.8</span>
         </div>
     </div>
+        </div>
     <div className='bg-white shadow-lg rounded-3xl p-4 w-64'>
         <img src={effective}
         className='rounded-xl w-full h-36 object-contain' />
@@ -56,14 +60,16 @@ const CourseCard = () => {
             <h3 className='text-md font-semibold text-gray-800'>Effecvtive Leadership Skills</h3>
             <FaHeart className='mt-1 cursor-pointer text-red-700'/>
         </div>
-        <div className='flex items-center gap-1'>
+        <div className='flex justify-between items-center'>
+          <div className='flex items-center gap-1 pt-2'>
             <FaRegClock />
             <span className='font-semibold text-purple-500'>2hr 30min</span>
         </div>
 
-        <div className='flex items-center gap-1'>
+        <div className='flex items-center pt-3 gap-1'>
             <FaStar className='text-yellow-400' />
             <span className='font-semibold'>4.8</span>
+        </div>
         </div>
     </div>
     <div className='bg-white shadow-lg rounded-3xl p-4 w-64'>
@@ -73,14 +79,16 @@ const CourseCard = () => {
             <h3 className='text-md font-semibold text-gray-800'>Effecvtive Leadership Skills</h3>
             <FaHeart className='mt-1 cursor-pointer text-red-700'/>
         </div>
-        <div className='flex items-center gap-1'>
+        <div className='flex justify-between items-center'>
+          <div className='flex items-center gap-1 pt-3'>
             <FaRegClock />
             <span className='font-semibold text-purple-500'>2hr 30min</span>
         </div>
 
-        <div className='flex items-center gap-1'>
+        <div className='flex items-center pt-3 gap-1'>
             <FaStar className='text-yellow-400' />
             <span className='font-semibold'>4.8</span>
+        </div>
         </div>
     </div>
     </div>

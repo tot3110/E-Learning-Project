@@ -7,7 +7,7 @@ import { FiSearch, FiSliders } from 'react-icons/fi';
 
 const Home = () => {
   return (
-    <div className='min-h-screen pt-10'>
+    <div className='pt-10'>
         <div className='relative w-full h-full'>
             <img src={pic2} alt="" className='w-[900px] h-[300px] mx-auto' />
             <img src={pic1} alt="" className='absolute top-0 left-75 w-[400px] h-[270px]' />
@@ -20,7 +20,7 @@ const Home = () => {
         <button className='absolute top-1/2 right-110 mt-8 px-6 py-2 rounded-full font-medium shadow-md
          bg-[#6E415E] text-white'>Explore More</button>
 
-        <div className='flex justify-center h-[200px] items-center gap-5'>
+        <div className='flex justify-center h-[150px] items-center gap-5'>
             <button className='bg-[#6E415E] p-2 rounded-2xl'>
             <img src={vector} className='h-8 w-8'/>
             </button>
