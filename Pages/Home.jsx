@@ -10,7 +10,7 @@ const Home = () => {
     <div className='min-h-screen pt-10'>
         <div className='relative w-full h-full'>
             <img src={pic2} alt="" className='w-[900px] h-[300px] mx-auto' />
-            <img src={pic1} alt="" className='absolute top-0 left-60 w-[400px] h-[270px]' />
+            <img src={pic1} alt="" className='absolute top-0 left-75 w-[400px] h-[270px]' />
         </div>
 
         <div className='absolute top-1/3 right-90'>
