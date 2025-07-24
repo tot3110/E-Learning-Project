@@ -4,7 +4,7 @@ import bell from '../src/assets/bell.png'
 
 const Navbar = () => {
   return (
-    <nav className='flex items-center justify-between px-6 py-4 bg-[#E9C3DC]'>
+    <nav className='flex items-center justify-between px-6 py-4'>
         <div className='flex items-center'>
             <img src={logo} alt="" className='w-40 h-auto'/>
         </div>
@@ -25,3 +25,5 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+

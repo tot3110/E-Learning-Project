@@ -13,7 +13,7 @@ import Faqs from '../Pages/Faqs'
 
 function App() {
   return (
-    <div className='bg-[#E9C3DC]'>
+    <div className='bg-gradient-to-b from-[#E9C3DC] to-[#6E415E]'>
       <Navbar />
       <Home />
       <Categories />
