@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaRegClock, FaStar, FaHeart } from 'react-icons/fa';
 import data from '../src/assets/datascience.png'
-import EnrolledCourses from '../Pages/PopularedCourses';
 import effective from '../src/assets/effective.png'
 import PopularedCourses from '../Pages/PopularedCourses';
 

@@ -4,7 +4,7 @@ const PopularedCourses = () => {
   return (
     <div>
       <div>
-      <h2 className='font-bold text-3xl pl-10 text-center'>Populared Courses</h2>
+      <h2 className='font-bold text-3xl pt-8 pb-1 text-start pl-20'>Populared Courses</h2>
     </div>
     </div>
   )

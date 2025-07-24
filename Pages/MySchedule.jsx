@@ -12,13 +12,13 @@ const MySchedule = () => {
     {
       time: 12,
       title: "Introduction to Python",
-      duration: "1h 30min",
+      duration: "1h",
       // top: "mt-[40px]"
     },
     {
       time: 15,
       title: "Professional Practices",
-      duration: "1h 30min",
+      duration: "2h 10min",
       // top: "mt-[40px]"
     },
   ]

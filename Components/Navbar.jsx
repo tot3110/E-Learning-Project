@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className='flex items-center'>
             <img src={logo} alt="" className='w-40 h-auto'/>
         </div>
-      <div className='flex gap-6 text-gray-700 font-medium'>
+      <div className='hidden lg:flex gap-6 text-gray-700 font-medium'>
         <a href="">Home</a>
         <a href="">Categories</a>
         <a href="">My Schedule</a>

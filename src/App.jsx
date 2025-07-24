@@ -5,6 +5,10 @@ import Categories from '../Pages/Categories'
 import CourseCard from '../Components/CourseCard'
 import MySchedule from '../Pages/MySchedule'
 import UpComingSessions from '../Pages/UpComingSessions'
+import EnrolledCourses from '../Pages/EnrolledCourses'
+import Instructor from '../Pages/Instructor'
+import Testimonials from '../Pages/Testimonials'
+import Faqs from '../Pages/Faqs'
 
 
 function App() {
@@ -14,11 +18,14 @@ function App() {
       <Home />
       <Categories />
       <CourseCard />
+      <EnrolledCourses />
       <MySchedule />
       <UpComingSessions/>
+      <Instructor />
+      <Testimonials />
+      <Faqs />
       </div>
   )
 }
 
 export default App
-
