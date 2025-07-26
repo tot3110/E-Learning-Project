@@ -6,9 +6,9 @@ import PopularedCourses from '../Pages/PopularedCourses';
 
 const CourseCard = () => {
   return (
-    <div className='p-20'>
+    <div className='p-15'>
     <PopularedCourses />
-    <div className='flex items-center justify-center gap-10 p-20'>
+    <div className='flex items-center justify-center gap-10 p-15'>
     <div className="bg-white rounded-3xl shadow-lg p-4 w-64">
       <img
         src={data}
