@@ -1,10 +1,11 @@
 import React from 'react';
 import effective from '../src/assets/effective.png';
 import { FaRegClock, FaStar, FaHeart } from 'react-icons/fa';
+import PopularedCourses from './PopularedCourses';
 
 
 const CourseCard = ({ title, duration, rating, image }) => (
-  <div className='bg-white shadow-lg rounded-3xl p-4 w-64'>
+  <div className='bg-white shadow-lg rounded-3xl p-4 w-full max-w-xs sm:w-[260px]'>
     <img src={image} alt={title} className='rounded-xl w-full h-36 object-contain' />
     
     <div className='flex justify-between text-sm text-gray-600 mt-2'>
@@ -36,10 +37,13 @@ const EnrolledCourses = () => {
   ];
 
   return (
-    <div>
-      <h2 className='font-bold text-3xl p-0 pb-1 text-start pl-40'>Enrolled Courses</h2>
-      
-      <div className='flex flex-wrap justify-center gap-10 pt-15'>
+    <div className='w-full px-4 pt-5 sm:px-8 md:px-20'>
+      {/* <h2 className='font-bold text-2xl pl-20 sm:text-3xl pt-10 pb-4 text-start'>
+        Enrolled Courses
+      </h2> */}
+
+      <PopularedCourses heading="Enrolled Courses" />
+      <div className='flex flex-wrap justify-center gap-6 p-5'>
         {courses.map((course, index) => (
           <CourseCard key={index} {...course} />
         ))}
@@ -49,5 +53,3 @@ const EnrolledCourses = () => {
 };
 
 export default EnrolledCourses;
-
-

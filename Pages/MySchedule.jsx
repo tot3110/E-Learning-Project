@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaBookOpen } from 'react-icons/fa'
+import PopularedCourses from './PopularedCourses'
 
 const MySchedule = () => {
   const scheduleItems = [
@@ -24,15 +25,16 @@ const MySchedule = () => {
   ]
 
   return (
-    <div className='p-6 rounded-lg w-[700px] mx-auto'>
-      <div className='flex justify-between items-center mb-4'>
-        <h2 className='font-bold text-3xl p-10 text-center'>My Schedule</h2>
-      <button className='text-sm text-gray-700 hover:underline'>Add Class +</button>
-    </div>
+    <div className='p-6 rounded-lg w-full flex flex-col md:items-center'>
+      {/* <div className='flex justify-between items-center mb-4'> */}
+        {/* <h2 className='font-bold text-2xl sm:text-3xl pt-10 pb-4 text-start'>My Schedule</h2> */}
+        <PopularedCourses heading="My Schedule" />
+      {/* <button className='text-sm text-gray-700 hover:underline'>Add Class +</button> */}
+    {/* </div> */}
 
     <p className='text-gray-800 font-semibold mb-4'>Thursday</p>
 
-    <div className='relative pl-6'>
+    <div className='relative pl-6 md:w-[700px]'>
       {Array.from({length:12}, (index,i) =>(
         <div 
         key ={i}

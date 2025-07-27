@@ -1,41 +1,50 @@
-import React from 'react'
-import pic2 from '../src/assets/pic2.png'
-import pic1 from '../src/assets/pic1.png'
-import vector from '../src/assets/Vector.png'
-import { FiSearch, FiSliders } from 'react-icons/fi';
-
+import React from 'react';
+import pic2 from '../src/assets/pic2.png';
+import pic1 from '../src/assets/pic1.png';
+import vector from '../src/assets/Vector.png';
+import { FiSearch } from 'react-icons/fi';
 
 const Home = () => {
   return (
-    <div className='pt-10'>
-        <div className='relative w-full h-full'>
-            <img src={pic2} alt="" className='w-[900px] h-[300px] mx-auto' />
-            <img src={pic1} alt="" className='absolute top-0 left-75 w-[400px] h-[270px]' />
-        </div>
+    <div className="pt-10 relative w-full">
+      
+      <div className="relative w-full max-w-6xl mx-auto">
+        <img src={pic2} alt="" className="w-full h-auto max-h-[300px] object-cover rounded-4xl" />
+        <img
+          src={pic1}
+          alt=""
+          className="absolute top-5 left-5 md:top-0 md:left-20 w-48 sm:w-72 md:w-[400px] h-auto"
+        />
 
-        <div className='absolute top-1/3 right-90'>
-            <p className='font-bold text-4xl text-white leading-snug'>BEST COURSES <br />FOR YOU !</p>
-        </div>
         
-        <button className='absolute top-1/2 right-110 mt-8 px-6 py-2 rounded-full font-medium shadow-md
-         bg-[#6E415E] text-white'>Explore More</button>
+        <div className="absolute top-5 right-4 sm:top-20 sm:right-10 md:top-24 md:right-32 text-center">
+          <p className="font-bold text-2xl sm:text-3xl md:text-5xl text-white leading-snug">
+            BEST COURSES <br /> FOR YOU!
+          </p>
+          <button className="mt-4 md:px-5 px-3 py-2 rounded-full font-medium shadow-md bg-[#6E415E] text-white">
+            Explore More
+          </button>
+        </div>
+      </div>
 
-        <div className='flex justify-center h-[150px] items-center gap-5'>
-            <button className='bg-[#6E415E] p-2 rounded-2xl'>
-            <img src={vector} className='h-8 w-8'/>
-            </button>
+      
+      <div className="flex justify-center items-center gap-5 mt-10 px-4">
+        
+        <button className="bg-[#6E415E] p-3 rounded-2xl">
+          <img src={vector} className="h-6 w-6" />
+        </button>
 
-
-            <div className='relative'>
-            <FiSearch className='text-[#7a2b5f] absolute top-4 left-4' />
-            <input type="text"
-            placeholder='Search'
-            className='text-[#7a2b5f] border border-b rounded-4xl bg-white py-2 w-100 h-12 pl-12' />
-            </div>
-         </div>
-
+        <div className="relative w-full max-w-md">
+          <FiSearch className="text-[#7a2b5f] absolute top-3.5 left-4 text-xl" />
+          <input
+            type="text"
+            placeholder="Search"
+            className="text-[#7a2b5f] border border-gray-300 rounded-full bg-white py-2 w-full pl-12 pr-4 focus:outline-none"
+          />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
