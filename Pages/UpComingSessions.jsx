@@ -20,13 +20,13 @@ const UpComingSessions = () => {
       <p className='text-[#704360] text-center text-sm md:text-auto'>By Ruby Perrin</p>
     </div>
 
-    <div className='flex flex-col items-center'>
-      <div className='text-start w-[1180px]'>
-      <h2 className='font-semibold text-3xl pt-20 pb-5 text-start text-[#B6116B]'>Digital Marketing Crash Course</h2>
+    <div className='flex flex-col items-center px-4'>
+      <div className='text-start w-full max-w-6xl'>
+      <h2 className='font-semibold text-2xl pt-10 sm:pt-20 pb-3 text-[#B6116B]'>Digital Marketing Crash Course</h2>
     </div>
-    <div className='flex gap-5 w-[700px] justify-between'>
-      <p className='text-xl text-gray-700'>Time: 5 PM</p>
-      <p className='text-xl text-gray-700'>Date: Jan 25</p>
+    <div className='flex flex-col sm:flex-row gap-3 sm:gap-5 w-full max-w-xl justify-between'>
+      <p className='text-lg sm:text-xl text-gray-700'>Time: 5 PM</p>
+      <p className='text-lg sm:text-xl text-gray-700'>Date: Jan 25</p>
     </div>
     </div>
     </div>
